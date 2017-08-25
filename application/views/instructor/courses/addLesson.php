@@ -114,7 +114,7 @@
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="app-student-profile.html">Account</a></li>
                                     <li><a href="app-student-billing.html">Billing</a></li>
-                                    <li><a href="login.html">Logout</a></li>
+                                    <li><?php echo anchor('AuthenticationController/logout','Logout');?></li>
                                 </ul>
                             </li>
                         </ul>

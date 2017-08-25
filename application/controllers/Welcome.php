@@ -16,4 +16,8 @@
 
 			$this->parser->parse('template/base', $data);
 		}
+
+		public function pricing(){
+			$this->load->view('pricing');
+		}
 	}

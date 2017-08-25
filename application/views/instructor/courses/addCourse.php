@@ -64,7 +64,7 @@
                                             <span class="label label-success">New</span>
                                         </div>
                                         <div class="media-left">
-                                            <img src="<?php echo base_url('assets/images/people/50/guy-2.jpg');?>" alt="people" class="img-circle" width="30">
+                                            <img src="<?php echo base_url('assets/images/people/50/guy-6.jpg');?>" alt="people" class="img-circle" width="30">
                                         </div>
                                         <div class="media-body">
                                             <a href="#">Adrian D.</a> posted <a href="#">a photo</a> on his timeline.
@@ -109,12 +109,12 @@
                             <!-- User -->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle user" data-toggle="dropdown">
-                                    <img src="<?php echo base_url('assets/images/people/110/guy-5.jpg');?>" alt="{username}" class="img-circle" width="40" /> {username} <span class="caret"></span>
+                                    <img src="<?php echo base_url('assets/images/people/110/guy-1.jpg');?>" alt="{username}" class="img-circle" width="40" /> {username} <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="app-student-profile.html">Account</a></li>
                                     <li><a href="app-student-billing.html">Billing</a></li>
-                                    <li><a href="login.html">Logout</a></li>
+                                    <li><?php echo anchor('AuthenticationController/logout','Logout');?></li>
                                 </ul>
                             </li>
                         </ul>

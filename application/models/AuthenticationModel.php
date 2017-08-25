@@ -31,4 +31,20 @@
 
 			return $query->result();
 		}
+
+		public function recentCourses($id){
+			$this->db->select('*');
+			$this->db->from('course');
+
+			$where = array(
+				'instructor' => $id
+			);
+
+			$this->db->where($where);
+			$this->db->order_by('start_date', 'DESC');
+			$this->db->limit(3);
+			$query = $this->db->get();
+
+			return $query->result();
+		}
 	}
